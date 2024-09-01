@@ -1,5 +1,5 @@
 
-export interface Table {
+export interface Product {
     "Tracking ID": number;
     "Product Image": string;
     "Product Name": string;
@@ -8,4 +8,8 @@ export interface Table {
     "Amount": number;
     "Payment Mode": string;
     "Status": string;
+}
+
+export interface ProductColumn extends Product {
+    'Actions'?: string
 }
